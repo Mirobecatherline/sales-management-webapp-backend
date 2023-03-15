@@ -23,6 +23,7 @@ default: &default
 
 development:
   <<: *default
+  url: <%= ENV["DATABASE_URL"] %>
   database: dashbord_backend_development
 
   # The specified database role being used to connect to postgres.
@@ -57,6 +58,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
+  url: <%= ENV["DATABASE_URL"] %>
   database: dashbord_backend_test
 
 # As with config/credentials.yml, you never want to store sensitive information,
@@ -81,6 +83,7 @@ test:
 #
 production:
   <<: *default
+  url: <%= ENV["DATABASE_URL"] %>
   database: dashbord_backend_production
   username: dashbord_backend
   password: <%= ENV["DASHBORD_BACKEND_DATABASE_PASSWORD"] %>
