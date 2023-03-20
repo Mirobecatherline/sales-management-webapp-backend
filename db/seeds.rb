@@ -6,6 +6,11 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 Sale.destroy_all
+Employee.destroy_all
+SalesA.destroy_all
+SalesB.destroy_all
+SalesC.destroy_all
+
 p "start seeding"
 sales=Sale.create!([
     {
@@ -183,19 +188,34 @@ salesC=SalesC.create!([
 ])
 employee= Employee.create!([
    { 
-    name:"mirobe",
-    contact: 254721969149,
+    name:"Evan",
+    contact: 254794883161,
     shop:"gateA"
 },
    { 
-    name:"cate",
-    contact: 254721969149,
-    shop:"gateB"
+    name:"Naomy",
+    contact: 254710306057,
+    shop:"Containers"
 },
    { 
-    name:"nyanduko",
-    contact: 254721969149,
-    shop:"gateC"
+    name:"Rachael",
+    contact: 254719507952,
+    shop:"GateB"
+},
+{ 
+    name:"Elijah",
+    contact: 254711612150,
+    shop:"Containers"
+},
+{ 
+    name:"Peter",
+    contact: 254742504325,
+    shop:"GateB"
+},
+{ 
+    name:"Kirui",
+    contact: 254724827133,
+    shop:"Repairs"
 },
 ])
 p "finished seeding"
