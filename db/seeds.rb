@@ -12,53 +12,7 @@ SalesB.destroy_all
 SalesC.destroy_all
 
 p "start seeding"
-sales=Sale.create!([
-    {
-        product:"iphone12",
-        date:"2023-03-4",
-        price:1000
-    },
-    {
-        product:"iphone12",
-        date:"2023-03-4",
-        price:1000
-    },
-    {
-        product:"iphone12",
-        date:"2023-03-4",
-        price:1000
-    },
-    {
-        product:"iphone12",
-        date:"2023-03-4",
-        price:1000
-    },
-    {
-        product:"iphone12",
-        date:"2023-03-4",
-        price:1000
-    },
-    {
-        product:"iphone12",
-        date:"2023-03-4",
-        price:1000
-    },
-    {
-        product:"iphone12",
-        date:"2023-03-4",
-        price:1000
-    },
-    {
-        product:"iphone12",
-        date:"2023-03-4",
-        price:1000
-    },
-    {
-        product:"iphone12",
-        date:"2023-03-4",
-        price:1000
-    }
-])
+
 salesa=SalesA.create!([
      {
         product:"iphone12",
