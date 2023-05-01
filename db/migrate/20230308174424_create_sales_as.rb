@@ -5,6 +5,7 @@ class CreateSalesAs < ActiveRecord::Migration[7.0]
       t.string :employee
       t.string :status
       t.date :date
+      t.integer :quantity
       t.integer :price
 
       t.timestamps

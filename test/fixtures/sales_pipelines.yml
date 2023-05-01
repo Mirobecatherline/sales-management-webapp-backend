@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  product: MyString
+  employee: MyString
+  status: MyString
+  date: 2023-05-01
+  quantity: 1
+  price: 1
+
+two:
+  product: MyString
+  employee: MyString
+  status: MyString
+  date: 2023-05-01
+  quantity: 1
+  price: 1
